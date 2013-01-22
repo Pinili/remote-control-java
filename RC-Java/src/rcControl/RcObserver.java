@@ -30,6 +30,10 @@ public class RcObserver {
 		bmgScreenShot = robCamera.createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
 	}
 	
+	public static BufferedImage getLastImage(){
+		return bmgScreenShot;
+	}
+	
 	public static int getMouseX(){
 		return MouseInfo.getPointerInfo().getLocation().x;
 	}
